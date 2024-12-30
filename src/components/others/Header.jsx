@@ -47,7 +47,7 @@ export default function Header() {
                   <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
                 </li>
               </Link>
-              <Link to={"/"}>
+              <Link to={"/user"}>
                 <li className="nav-item">
                   <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
                 </li>

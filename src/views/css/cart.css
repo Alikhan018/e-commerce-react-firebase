@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainDiv{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0px 20px 150px;
+}
+.headMain{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    i{
+        color: green;
+        padding-top: 4px;
+        font-size: 35px;
+    }
+}
+.itemDiv{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 15px 10px 15px 0px;
+    width: 45%;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+.itemDiv:hover{
+    transform: scale(1.1);
+}
+.crossButton {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 20px;
+    color: rgb(110, 109, 109);
+    border-radius: 50%;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.crossButton:hover {
+    /* color: #333; */
+    color: red;
+}
+.imgDiv{
+    width: auto;
+    height: 150px;
+    border-radius: 8px;
+}
+.imgDiv img{
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+.itemContent{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.itemName{
+
+}
+.itemName h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.itemDesc{
+    width: 90%;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.itemDesc p{
+
+}
+.itemOther{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+}
+.quantityInput{
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.priceTag{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.lastDiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    padding: 15px 10px 15px 0px;
+    width: 45%;
+}
+.leastDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 7px;
+}
+.totalAmount{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: end;
+}
+.totalAmount h4{
+    font-size: 19px;
+}
+button{
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.checkButton{
+    
+}
+.checkButton button{
+    background-color: green;
+    border: none;
+    outline: none;
+    &:hover{
+        background-color: rgb(19, 80, 19);
+    }
+}
