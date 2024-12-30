@@ -1,0 +1,108 @@
+:root {
+    --blue: #3665f3;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .full-width {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+  }
+  #top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    #csr {
+      color: black !important;
+      font-size: 20px;
+      /* text-decoration: none; */
+      transition: 0.1s ease-in;
+      &:hover {
+        color: var(--blue) !important;
+      }
+    }
+  }
+  #left {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 6px;
+    #logo {
+      display: flex;
+      align-items: center;
+      #img-logo {
+        img {
+          width: 100px;
+        }
+      }
+    }
+    #search {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      #search-bar {
+        flex-grow: 3;
+        padding: 10px;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 20px;
+      }
+      #search-button {
+        flex-grow: 0.5;
+        color: white;
+        background-color: var(--blue);
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.1s ease-in;
+        &:hover {
+          background-color: white;
+          color: var(--blue);
+          border-color: var(--blue);
+        }
+      }
+    }
+  }
+  .lower-header {
+    width: 90%;
+    font-size: 18px;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    .nav-div {
+      padding-left: 18px;
+    }
+    .nav-div,
+    .nav-div-two {
+      width: 50%;
+      display: flex;
+      nav {
+        .nav-list {
+          list-style-type: none;
+          display: flex;
+          gap: 20px;
+          a {
+            text-decoration: none;
+            color: black;
+            transition: 0.1s ease-in;
+            &:hover {
+              color: var(--blue);
+            }
+          }
+        }
+      }
+    }
+    .nav-div-two {
+      justify-content: flex-end;
+    }
+  }
