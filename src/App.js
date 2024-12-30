@@ -6,6 +6,7 @@ import Categories from "./views/Categories";
 import Products from "./views/Products";
 import UserProfile from "./views/UserProfile";
 import ShoppingCart from "./views/ShoppingCart";
+import Checkout from "./views/Checkout";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/categories/:id" element={<Products />} />
           <Route path="user" element={<UserProfile />} />
-          <Route path="cart" element={<ShoppingCart />} />
+          <Route path="/cart" element={<ShoppingCart />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<h1>Not found</h1>}></Route>
         </Routes>
       </Router>
